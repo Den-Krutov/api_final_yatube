@@ -6,10 +6,11 @@ User = get_user_model()
 
 class Group(models.Model):
     title = models.CharField('Title', max_length=64, help_text='Enter title')
-    slug = models.SlugField('URL', unique=True, help_text='Enter unique url for group')
+    slug = models.SlugField(
+        'URL', unique=True, help_text='Enter unique url for group')
     description = models.TextField(
         'Description', help_text='Enter description')
-    
+
     class Meta:
         verbose_name = 'Group'
         verbose_name_plural = 'Groups'
