@@ -9,11 +9,11 @@ The current API has the ability to work CRUD with the posts application.
 Clone the repository and go to it on the command line:
 
 ```
-git clone https://github.com/yandex-praktikum/kittygram.git
+git clone https://github.com/Den-Krutov/api_final_yatube
 ```
 
 ```
-cd kittygram
+cd api_final_yatube
 ```
 
 Create and activate a virtual environment:
@@ -60,8 +60,8 @@ http://127.0.0.1:8000/api/v1/posts/
 ```
 {
   "count": 123,
-  "next": "http://api.example.org/accounts/?offset=400&limit=100",
-  "previous": "http://api.example.org/accounts/?offset=200&limit=100",
+  "next": "http://api/v1/posts/?offset=400&limit=100",
+  "previous": "http://api/v1/posts/?offset=200&limit=100",
   "results": [
     {
       "id": 0,
